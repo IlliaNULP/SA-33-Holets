@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'Inter', sans-serif;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #97CDFE;
+	padding: 0 1vw;
+}
+
+header img {
+	background-color: #EEEEEE;
+	border-radius: 50%;
+	padding: 1vw;
+	margin: 1vw;
+	width: 4vw;
+}
+
+nav a {
+	margin-right: 1.5vw;
+}
+
+.sport-time {
+	font-size: 2vw;
+	color: white;
+	font-family: 'Goldman', cursive;
+	margin-left: 1vw;
+}
+
+.first-sec {
+/*	background-image: url("back1.jpg");*/
+	background-size: 100%;
+	height: 40vw;
+	background-position: center;
+	position: relative;
+}
+
+video {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.main-photo {
+	position: absolute;
+	width: 40%;
+	height: 60%;
+	top: 15%;
+	left: 10%;
+	border-radius: 10%;
+	border: 1vw solid #97CDFE;
+}
+
+.main-text {
+	position: absolute;
+	top: 15%;
+	left: 60%;
+	text-align: center;
+	padding: 0 auto;
+}
+
+.main_text1 {
+	width: 30vw;
+	padding: 2vw 1vw;
+	border-radius: 20%;
+	font-size: 2.5vw;
+	text-align: center;
+	background-color: #97CDFE;
+}
+
+.main_text2 {
+	width: 24vw;
+	padding: 1.5vw 0.5vw;
+	border-radius: 20%;
+	font-size: 2vw;
+	text-align: center;
+	background-color: #D4D4D4;
+	margin: 0 auto;
+}
+
+.second-sec {
+	background-image: url("back2.jpg");
+	background-size: 100%;
+	height: 45vw;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.item-blocks {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	height: 100%;
+}
+
+.item-blocks div {
+	margin: 2%;
+	height: auto;
+	width: 20%;
+	text-align: center;
+	border-radius: 5%;
+	background-color: white;
+}
+
+.item-blocks div:hover {
+	background-color: #ADF0FF;
+}
+
+.item-blocks div img {
+	width: 90%;
+	height: 50%;
+	margin: 5% 0%;
+	border-radius: 10%;
+}
+
+.item-blocks div p {
+	white-space: nowrap;
+	margin: 3%;
+}
+
+.item-blocks div button {
+	font-size: 1.5vw;
+	padding: 2% 4%;
+	margin: 10%;
+	border-radius: 30%;
+	background-color: #2DCFF2;
+}
+
+.item-name, .price {
+	font-size: 2vw;
+}
+
+.item-desc {
+	font-size: 1.2vw;
+}
+
+.third-sec {
+	background-image: url("back3.jpg");
+	background-size: 100%;
+	height: 45vw;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.third-sec form {
+	height: auto;
+	width: 50%;
+	background-color: #2DCFF2;
+	border-radius: 5%;
+}
+
+.third-sec p {
+	margin: 2%;
+	font-size: 3vw;
+	text-align: center;
+}
+
+.third-sec input, textarea {
+	margin: 1% 1% 1% 3%;
+	padding: 1%;
+	border: 0.2vw solid black;
+	font-size: 2vw;
+	resize: none;
+}
+
+.third-sec button {
+	margin: 2% 2% 4% 65%;
+	padding: 2% 3%;
+	background-color: #F9FAFA;
+	border: 0.2vw solid black;
+	font-size: 2vw;
+}
+
+.third-sec button:hover {
+	background-color: #ADF0FF;
+}
+
+#message {
+	padding-bottom: 2%;
+	height: 20%;
+}
+
+footer {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #454545;
+}
+
+footer div {
+	margin-left: 2vw;
+	margin-right: 2vw;
+	font-size: 2vw;
+	color: white;
+	text-align: center;
+}
+
+footer p {
+	margin: 0.8vw;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	right: 2vw;
+	background-color: #f1f1f1;
+	z-index: 1;
+}
+
+.dropdown-content a {
+	font-size: 1.5vw;
+ 	color: black;
+ 	padding: 5% 7%;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+@media (max-width: 800px) {
+	.sport-time {
+		font-size: 15px;
+	}
+
+	.second-sec {
+		background-size: 170%;
+		height: 90vw;
+	}
+
+	.item-blocks div {
+		width: 25%;
+		height: 45%;
+		margin: 2% 5% 2% 5%;
+	}
+
+	.item-blocks div img {
+		width: 80%;
+		height: 50%;
+		margin: 3% 0%;
+	}
+
+	.item-blocks div p {
+		margin: 1%;
+	}
+
+	.item-blocks div button {
+		font-size: 2vw;
+		padding: 2% 4%;
+	}
+
+	.item-name, .price {
+		font-size: 3vw;
+	}
+
+	.item-desc {
+		font-size: 1.5vw;
+	}
+
+	.third-sec {
+		background-size: 100%;
+		height: 60vw;
+	}
+
+	.dropdown-content a {
+	font-size: 2vw;
+ 	padding: 2% 3%;
+ 	width: 90vw;
+	}
+
+}
